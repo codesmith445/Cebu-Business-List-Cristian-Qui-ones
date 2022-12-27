@@ -1,0 +1,268 @@
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav h2, a, button {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(../assets/zany-jadraque-wptXOM6JytM-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    padding-top: 30px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav h2 {
+    color: #fff;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding-right: 90px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    transition: .5s;
+}
+
+header nav ul li a:hover {
+    color: #FB2576;
+}
+
+header nav button {
+    padding: 12px 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #FB2576;
+    outline: none;
+    border: none;
+    margin-top: -16px;
+    transition: 0.5s;
+}
+
+header nav button:hover {
+    transform: scale(1.1);
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+.hero h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.hero {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 200px;
+
+}
+
+.hero .navbar {
+    margin-top: 10px;
+}
+
+
+.card-main {
+    background-color: #E8E8E8;
+}
+
+.card-main h3 {
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    animation: typing 7.3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+
+.card-wrapper img {
+    max-width: 100px;
+}
+
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: row;
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-wrapper {
+    align-content: center;
+    max-width: 220px;
+    height: 180px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-wrapper img {
+    padding-top: 15px;
+}
+
+.business-wrapper {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 30px;
+}
+
+
+
+.cities a {
+    transition: all .5s;
+}
+
+.cities .ad-space {
+    background-color: #E8E8E8;
+    height: 74.5%;
+    width: 90%;
+}
+
+.cities .ad-space h4 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 7.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.cities a:hover {
+    color: #FB2576;
+}
+
+.business {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.business img {
+    max-width: 300px;
+}
+
+.contact {
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.contact-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url("../assets/zany-jadraque-wptXOM6JytM-unsplash.jpg");
+}
+
+.contact-content form {
+    border: none;
+}
+
+
+
+
+.contact-content input[type=text],textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-content input[type=submit] {
+    background-color: #FB2576;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-main {
+    background-color: #E8E8E8;
+    margin-top: 90px;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.footer-list ul {
+    display: inline-flex;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
